@@ -1,0 +1,14 @@
+{
+  "name": "metalcell-etcd",
+  "version": "0.1.0",
+  "author": "Cosmin Lehene <clehene@adobe.com>",
+  "summary": "A Docker based Etcd Puppet module",
+  "license": "Apache 2.0",
+  "source": "https://git.corp.adobe.com/metal-cell/puppet-etcd",
+  "project_page": "https://git.corp.adobe.com/metal-cell/puppet-etcd",
+  "issues_url": "https://git.corp.adobe.com/metal-cell/puppet-etcd/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
