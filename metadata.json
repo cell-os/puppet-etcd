@@ -1,6 +1,6 @@
 {
-  "name": "metalcell-etcd",
-  "version": "0.1.0",
+  "name": "puppet-etcd",
+  "version": "0.1.0-adobe-SNAPSHOT",
   "author": "Cosmin Lehene <clehene@adobe.com>",
   "summary": "A Docker based Etcd Puppet module",
   "license": "Apache 2.0",

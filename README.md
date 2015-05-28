@@ -1,6 +1,19 @@
 Etcd
 ====
 
+This project is part of Adobe HSTACK project group.
+
+##Source:
+* https://git.corp.adobe.com/metal-cell/puppet-etcd
+
+## JIRA project
+* https://jira.corp.adobe.com/browse/HSTACK
+* Component: [**puppet-etcd**](https://jira.corp.adobe.com/browse/HSTACK/component/24915)
+
+## Contributing Guide
+Check [Contributors Guide](http://saasbase.corp.adobe.com/guides/saasbase_contributors.html)
+
+
 ## Table of Contents
 
   * [etcd](#etcd)
