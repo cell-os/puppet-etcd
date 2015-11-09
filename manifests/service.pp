@@ -22,7 +22,7 @@ class etcd::service (
   }
 
   if !is_integer($idx) {
-    fail("Cant find ${etcd::nic} : ${ip} or $::fqdn in peers ${etcd::peers}")
+    fail("Can't find etcd::nic : \"${etcd::nic} : ${ip}\" or fqdn \"$::fqdn\" in peers \"${etcd::peers}\". Please read documentation.")
   }
   notify {"${address} - ${idx} in ${peers}":}
 

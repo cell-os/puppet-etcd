@@ -4,10 +4,6 @@ After=docker.service
 Requires=docker.service
 
 [Service]
-# FIXME extract docker path to variable
-# note the with the following ExecStartPre installation is not required
-# ExecStartPre=/home/hadoop/docker/docker run --rm -v /opt/bin:/opt/bin ibuildthecloud/systemd-docker
-
 ExecStartPre=-<%= @docker_path %> rm -f etcd_container
 ExecStartPre=<%= @docker_path %> run --rm -v /opt/bin:/opt/bin ibuildthecloud/systemd-docker
 ExecStart=/opt/bin/systemd-docker --cgroups name=systemd run --rm -v /var/etcd-data:/var/etcd-data \
