@@ -5,7 +5,7 @@ Requires=docker.service
 
 [Service]
 ExecStartPre=-<%= @docker_path %> rm -f etcd_container
-ExecStartPre=<%= @docker_path %> run --rm -v /opt/bin:/opt/bin ibuildthecloud/systemd-docker
+ExecStartPre=<%= @docker_path %> run --rm -v /opt/bin:/opt/bin cellos/systemd-docker
 ExecStart=/opt/bin/systemd-docker --cgroups name=systemd run --rm -v /var/etcd-data:/var/etcd-data \
 -p 4001:4001 -p 2380:2380 -p 2379:2379 --name etcd_container <%= @registry %>:<%= @version %> \
  -data-dir /var/etcd-data \
