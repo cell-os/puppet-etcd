@@ -50,6 +50,8 @@ class etcd (
   $service_enable        = "true",
   $service_ensure        = "running",
 ){
+  include docker
+  Class['etcd'] <- Class['docker']
   anchor { 'etcd::begin': } ->
   class { '::etcd::service': } ->
   anchor { 'etcd::end': }
