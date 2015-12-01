@@ -49,6 +49,7 @@ This module is solely based on Docker and only deploys a service unit file.
 ### Setup Requirements 
 
 * Requires Docker to be installed on the host system
+* Requires a systemd enabled host
 
 ### Beginning with etcd
 
