@@ -1,6 +1,6 @@
 {
   "name": "puppet-etcd",
-  "version": "0.1.0-rc2-adobe",
+  "version": "0.1.0-rc3-adobe",
   "author": "Cosmin Lehene <clehene@adobe.com>",
   "summary": "A Docker based Etcd Puppet module",
   "license": "Apache 2.0",
